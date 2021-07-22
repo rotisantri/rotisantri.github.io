@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="shortcut icon" href="img/logo.png">
+
+    <title>ROTI SANTRI</title>
+  </head>
+  <body id="home">
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+     <div class="container">
+          <a class="navbar-brand" href="#">
+            <strong>Denah Mitra Roti Santri</strong>
+            <!-- <img src="img/logo.png" alt="" width="150" height="50"> -->
+          </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav ms-auto">
+           <a class="nav-link active" aria-current="page" href="#home">Home</a>
+           <a class="nav-link" href="#about">About</a>
+           <a class="nav-link" href="#maps">Maps</a>
+           <a class="nav-link" href="#laporan">Laporan</a>
+         </div>
+       </div>
+     </div>
+   </nav>
+
+
+   <!-- Jumbotron -->
+   <section class="jumbotron text-center">
+     <div class="jumbotron jumbotron-fluid">
+       <div class="container">
+        <img src="img/roti.jpg" class="rounded-circle img-thumbnail">
+         <h1 class="display-4">MELAYANI SEPENUH HATI</h1>
+       </div>
+     </div>
+   </section>
+   <!-- akhir jumbotron -->
+
+   <!-- about -->
+   <section id="about">
+     <div class="container pb-5">
+       <div class="row text-center mb-4 mt-4">
+         <div class="col">
+           <h2>Tentang Kami</h2>
+         </div>
+       </div>
+       <div class="row justify-content-center fs-5 text-center">
+         <div class="col-md-4">
+           <p>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           </p>
+         </div>
+         <div class="col-md-4">
+           <p>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           </p>
+         </div>
+       </div>
+     </div>
+   </section>
+   <!-- akhir about -->
+
+   <!-- portofolio -->
+   <section id="maps">
+     <div class="container">
+        <div class="row justify-content-center mb-3">
+          <div class="col-md">
+           <div class="card">
+             <iframe src="https://www.google.com/maps/d/embed?mid=1MHbmeEsSabw5KxLLpxOS2x2SkDUUL2II" width="100%" height="500"></iframe>
+           </div>
+          </div>
+        </div>
+     </div>
+   </section>
+   <!-- akhir portofolio -->
+
+   <!-- contact -->
+   <section id="laporan">
+    <div class="container">
+       <div class="row text-center mb-3 mt-4">
+         <div class="col">
+           <h2>Laporan</h2>
+         </div>
+       </div>
+       <div class="row justify-content-center">
+         <div class="col-md-6">
+          <div class="alert alert-success alert-dismissible fade show d-none myalert" role="alert">
+            <strong>Terima kasih</strong> Laporan telah terkirim
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+           <form name="laporan">
+             <div class="mb-3">
+               <label for="nama_sales" class="form-label">Nama Sales</label>
+               <input type="text" class="form-control" id="nama_sales" aria-describedby="name" name="nama_sales">
+             </div>
+             <div class="mb-3">
+               <label for="nama_toko" class="form-label">Nama Toko</label>
+               <input type="text" class="form-control" id="nama_toko" aria-describedby="name" name="nama_toko">
+             </div>
+             <div class="mb-3">
+               <label for="jml_roti" class="form-label">Jumlah Roti</label>
+               <input type="number" class="form-control" id="jml_roti" aria-describedby="name" name="jml_roti">
+             </div>
+             
+             <div class="mb-3">
+               <label for="catatan" class="form-label">Catatan</label>
+               <textarea class="form-control" id="catatan" rows="3" name="catatan"></textarea>
+             </div>
+             <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
+             <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+               <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+               Loading...
+             </button>
+           </form>
+         </div>  
+       </div>
+     </div>
+
+     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,192L48,208C96,224,192,256,288,261.3C384,267,480,245,576,224C672,203,768,181,864,165.3C960,149,1056,139,1152,154.7C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,192L0,160L240,160L240,96L480,96L480,32L720,32L720,192L960,192L960,224L1200,224L1200,160L1440,160L1440,320L1200,320L1200,320L960,320L960,320L720,320L720,320L480,320L480,320L240,320L240,320L0,320L0,320Z"></path></svg>
+   </section>
+   <!-- akhir contact -->
+
+   <!-- footer -->
+   <footer class="text-center pt-3 pb-5">
+     
+     <div class="row">
+       <div class="col-md">
+        <p>Created With <i class="bi bi-heart-fill text-danger"></i> by <a href="#" class="fw-bold">Muhammad Edi Iswanto</a> 2021</p>    
+       </div>
+     </div>
+   </footer>
+   <!-- akhir footer -->
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <!-- 
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbwszpMVTiYSJ2ZcsYZMBHxav35YeP2qeL2s5ViitUzbpEDY6Mdj0Xmzz_3tmJF4GOS6/exec';
+          const form = document.forms['portofolio_up'];
+
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script> -->
+
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxU9aL527DOOy7tN2-h0ApmIfpczYb-BtSvXYW7XcAKHiTscTp4yxSLkNycZQu_rwOM/exec';
+      const form = document.forms['laporan'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.myalert');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        // ketika submit di klik
+        // tampilkan loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response =>{ 
+            // tampilkan kirim hilangkan loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            myAlert.classList.toggle('d-none');
+            // reset formnya
+            form.reset()
+            console.log('Success!', response);
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+
+
+
+
+  </body>
+</html>
