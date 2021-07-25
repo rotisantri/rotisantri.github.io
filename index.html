@@ -128,6 +128,21 @@
            </form>
          </div>  
        </div>
+
+
+
+
+       <table class="table table-striped">
+               <thead>
+                 <tr>
+                   <th>Nama</th>
+                   <th>Toko</th>
+                   <th>Jumlah Roti</th>
+                   <th>Catatan</th>
+                 </tr>
+               </thead>
+               <tbody id="demo"></tbody>
+             </table>
      </div>
 
      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,192L48,208C96,224,192,256,288,261.3C384,267,480,245,576,224C672,203,768,181,864,165.3C960,149,1056,139,1152,154.7C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
@@ -206,6 +221,46 @@
       })
     </script>
 
+
+    <script>
+      let xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          let data = JSON.parse(this.responseText).feed.entry;
+
+          let i;
+          for (i = 0; i < data.length; i++) {
+            let nama_sales = data[i]["gsx$namasales"]["$t"];
+            let nama_toko = data[i]["gsx$namatoko"]["$t"];
+            let jml_roti = data[i]["gsx$jmlroti"]["$t"];
+            let catatan = data[i]["gsx$catatan"]["$t"];
+
+            document.getElementById("demo").innerHTML +=
+              "<tr>" +
+              "<td>" +
+              nama_sales +
+              "</td>" +
+              "<td>" +
+              nama_toko +
+              "</td>" +
+              "<td>" +
+              jml_roti +
+              "</td>" +
+              "<td>" +
+              catatan +
+              "</td>" +
+              "</tr>";
+          }
+        }
+      };
+
+      xmlhttp.open(
+        "GET",
+        "https://spreadsheets.google.com/feeds/list/1jEFsqy1dyIappLkLxzkblnS5GcDuNjIDDiVS0ri1PLc/od6/public/values?alt=json",
+        true
+      );
+      xmlhttp.send();
+    </script>
 
 
 
