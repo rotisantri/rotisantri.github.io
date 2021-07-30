@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Roti Santri</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <!-- styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/nivo-slider.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Open+Sans:400,300,300italic,400italic" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/color/success.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+  
+    <!-- fav and touch icons -->
+    <link rel="shortcut icon" href="assets/img/logoroti.png">
+       
+
+    <style>
+      .hilang {
+        display: none;
+      }
+
+      .tampil {
+        display: inline-block;
+      }
+    </style>
+
+
+
+
+    
+    <!-- =======================================================
+      Theme Name: Scaffold
+      Theme URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
+      Author: BootstrapMade.com
+      Author URL: https://bootstrapmade.com
+    ======================================================= -->
+  </head>
+  
+  <body>
+  
+    <header>
+      <!-- Navbar
+      ================================================== -->
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <!-- logo -->
+            <a class="brand logo" href="index.html">
+              <img src="assets/img/logoroti.png" alt="" />
+            </a>
+            <!-- end logo -->
+  
+            <!-- top menu -->
+            <div>
+            <nav>
+              <ul class="nav topnav">
+                <li class="dropdown success active">
+                  <a href="index.html"><i class="icon-home icon-white"></i> Home</a>
+                </li>
+                <li class="dropdown primary">
+                  <a href="404.html"><i class="icon-star icon-white"></i> Tentang Kami</a>
+                </li>
+                <li class="dropdown danger">
+                  <a href="404.html"><i class="icon-leaf icon-white"></i> Produk Kami</a>
+                </li>
+                <li class="dropdown warning">
+                  <a href="#"><i class="icon-camera icon-white"></i> Mitra Usaha</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="sales1.html">Denah Sales 1</a></li>
+                    <li><a href="sales2.html">Denah Sales 2</a></li>
+                    <li><a href="sales3.html">Denah Sales 3</a></li>
+                    <li><a href="sales4.html">Denah Sales 4</a></li>
+                    <li><a href="404.html">Denah Sales 5</a></li>
+                    <li><a href="404.html">Denah Sales 6</a></li>
+                    <li><a href="404.html">Denah Sales 7</a></li>
+                    <li><a href="404.html">Denah Sales 8</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown info">
+                  <a href="rekap.html"><i class="icon-bullhorn icon-white"></i> Rekap Laporan</a>
+                </li>
+                <li class="inverse">
+                  <a href="404.html"><i class="icon-envelope icon-white"></i> Kontak Kami</a>
+                </li>
+              </ul>
+            </nav>
+            </div>
+            <!-- end menu -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <!-- Subhead
+================================================== -->
+  <section id="subintro">
+    <div class="jumbotron subhead" id="overview">
+      <div class="container">
+        <div class="row">
+          <div class="span8">
+            <h3><i class="m-icon-big-swapright m-icon-white"></i> Contact us</h3>
+            <p>Disputationi comprehensam nam ut eam id accusata explicari minim splendide duo ea dicant.</p>
+          </div>
+          <div class="span4">
+            <div class="input-append">
+              <form class="form-search">
+                <input type="text" class="input-medium search-query">
+                <button type="submit" class="btn btn-inverse">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="maincontent">
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+               
+
+        <iframe src="https://www.google.com/maps/d/embed?mid=1MHbmeEsSabw5KxLLpxOS2x2SkDUUL2II" width="100%" height="500"></iframe>
+
+      
+          <div class="spacer30"></div>
+
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          
+        </div>
+        <div class="span4">
+          <aside>
+            <div class="widget">
+              <h4 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapdown m-icon-white"></i></span>&nbsp;&nbsp;Laporan</h4>
+
+            <form name="laporan">
+
+              
+              <div class="alert alert-success hilang myalert" role="alert">
+                Laporan Berhasil Dikirim
+              </div>
+              <fieldset>
+                <label for="nama_sales">Nama Sales</label>
+                <select id="demo2" name="nama_sales" required>
+                  
+                </select>
+                <label for="nama_toko">Nama Toko</label>
+                <input type="text" id="nama_toko" name="nama_toko" placeholder="Nama Toko" required>
+                <div class="input-append">
+                  <label for="jml_roti">Jumlah Roti</label>
+                  <input class="span2" id="jml_roti" name="jml_roti" type="number" required>
+                  <span class="add-on">pcs</span>
+                </div>
+                <label for="catatan">Catatan</label>
+                <textarea rows="3" id="catatan" name="catatan"></textarea>
+                <label class="checkbox"></label>
+                <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
+                <button class="btn btn-success btn-loading hilang" disabled>
+                  <i class="fa fa-spinner fa-spin"></i> Loading
+                </button>
+              </fieldset>
+            </form>
+
+            </div>
+
+            
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer
+ ================================================== -->
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <div class="widget">
+          <h4>Toko Kami</h4>
+          <address>
+        <strong>Roti Santri.Tbk</strong><br>
+        Jl. Tengah Tani No.01<br>
+        Cirebon, Jawa Barat, Indonesia 14057<br>
+        <abbr title="Phone"></abbr> (0234) 456-7890
+        <br/><a href="mailto:#">hello@rotisantri.com</a>
+        </address>
+
+          
+        </div>
+      </div>
+      <div class="span4">
+        <div class="widget">
+          <h4>Halaman Website</h4>
+          <ul class="nav nav-list regular">
+            <li class="nav-header"><a href="index.html">Home</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Produk Kami</a></li>
+            <li><a href="#">Mitra Kami</a></li>
+            <li class="nav-header"><a href="blog.html">Ruang Berita</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="widget">
+          <h4>Sosial Media Kami</h4>
+          <form class="form-horizontal" action="#" method="post">
+            <fieldset>
+              <p>
+                Ikuti Juga Sosial Media Kami Untuk Mengetahui Lebih Dekat Kegiatan Kami
+              </p>
+
+            </fieldset>
+          </form>
+          <ul class="social_small">
+            <li class="facebook first"><a href="#" title="Facebook">Facebook</a></li>
+            <li class="twitt"><a href="#" title="Twitter">Twitter</a></li>
+            <li class="googleplus"><a href="#" title="google plus">Instagram</a></li>
+            <!-- <li class="flickr"><a href="#" title="flickr">Flickr</a></li>
+            <li class="dribbble"><a href="#" title="Dribbble">Dribbble</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="verybottom">
+    <div class="container">
+      <div class="row">
+        <div class="span6">
+          <p>&copy; Scaffold - All right reserved</p>
+        </div>
+        <div class="span6">
+          <div class="pull-right">
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Scaffold
+              -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script src="assets/js/jquery-1.8.2.min.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/jquery.elastislide.js"></script>
+<script src="assets/js/jquery.flexslider.js"></script>
+<script src="assets/js/jquery.prettyPhoto.js"></script>
+<script src="assets/js/application.js"></script>
+<script src="assets/js/nivo/jquery.nivo.slider.js"></script>
+<script src="assets/js/nivo/setting.js"></script>
+<script src="assets/js/hover/jquery-hover-effect.js"></script>
+<script src="assets/js/hover/setting.js"></script>
+
+<!-- Template Custom JavaScript File -->
+<script src="assets/js/custom.js"></script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyu2OOvlB-ldH1s7c9yQLRV7R7F-FyPtHGjyR8NARAe9Ere1ZVtfFz2acbLOJtMdjoQ/exec';
+  const form = document.forms['laporan'];
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const myAlert = document.querySelector('.myalert');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    // ketika submit di klik
+    // tampilkan loading, hilangkan tombol kirim
+    btnLoading.classList.toggle('hilang');
+    btnKirim.classList.toggle('hilang');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{ 
+        // tampilkan kirim hilangkan loading
+        btnLoading.classList.toggle('hilang');
+        btnKirim.classList.toggle('hilang');
+        // tampilkan alert
+        myAlert.classList.toggle('hilang');
+        // reset formnya
+        form.reset()
+        console.log('Success!', response);
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+<!-- panggil nama -->
+    <script>
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              var data = JSON.parse(this.responseText).feed.entry;
+
+              var i;
+              for (i = 0; i < data.length; i++) {
+                var nama = data[i]["gsx$nama"]["$t"];
+
+                document.getElementById("demo2").innerHTML +=
+                
+                  "<option id='nama_sales'>" +
+                  nama +
+                  "</option>";
+              }
+            }
+          };
+
+          xmlhttp.open(
+            "GET",
+            "https://spreadsheets.google.com/feeds/list/10RE_NdCLuKN97k1oA5-PEeiiAk8B7d76PQuk2N1zFz4/od6/public/values?alt=json",
+            true
+          );
+          xmlhttp.send();
+        </script>
+</body>
+
+</html>
